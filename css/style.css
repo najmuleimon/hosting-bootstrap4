@@ -1,0 +1,1477 @@
+/*------------------------------
+Common css Style
+-------------------------------*/
+@font-face {
+    font-family: droidserif-bold;
+    src: url(../fonts/driodserif/DroidSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: droidserif-reg;
+    src: url(../fonts/driodserif/DroidSerif-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+button:focus {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+a,
+i,
+button {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.all-btn {
+    display: inline-block;
+    font-family: 'droidserif-reg';
+    color: #fff;
+    font-size: 18px;
+    background: #119ee6;
+    border: 1px solid #119ee6;
+    line-height: 38px;
+    padding: 0 24px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.all-btn:hover {
+    background: transparent;
+    color: #119ee6;
+}
+
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #999;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+.title h2 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #222;
+    text-transform: capitalize;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+/*------------------------------
+top-to button css Style
+-------------------------------*/
+.top-to{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background: #119ee6;
+    border-radius: 50%;
+    filter: drop-shadow(0 5px 5px #999);
+}
+/*------------------------------
+top-menu css Style
+-------------------------------*/
+#top-menu {
+    background: #151414;
+}
+
+#top-menu .content p {
+    float: left;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-right: 12px;
+}
+
+#top-menu .content p,
+#top-menu li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #aaaaaa;
+}
+
+#top-menu .social {
+    float: left;
+}
+
+#top-menu li {
+    text-transform: none;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 8px;
+}
+
+#top-menu ul li a i {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+#top-menu ul li a:hover i {
+    color: #119ee6;
+}
+
+#top-menu .phn li i {
+    margin-right: 6px;
+}
+
+#top-menu .phn li:first-child {
+    margin-right: 20px;
+    position: relative;
+}
+
+#top-menu .phn li:first-child:after {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 1px;
+    top: 10px;
+    right: -10px;
+    background: rgba(170, 170, 170, 0.5);
+}
+
+/*------------------------------
+main-nav fixed css Style
+-------------------------------*/
+#main-nav.navFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    filter: drop-shadow(0 0 3px #999);
+}
+
+/*------------------------------
+main-nav css Style
+-------------------------------*/
+#main-nav {
+    background: #fff;
+}
+
+#main-nav .navbar .navbar-toggler-icon {
+    font-size: 30px;
+    color: #119ee6;
+}
+
+#main-nav .navbar .navbar-nav .nav-item {
+    padding: 0 20px;
+    position: relative;
+}
+
+#main-nav .navbar .navbar-nav .nav-item:first-child {
+    padding-left: 0;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    line-height: 80px;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link i {
+    margin-left: 5px;
+    color: #222;
+    font-size: 14px;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link.active {
+    color: #119ee6;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #119ee6;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #119ee6;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#main-nav .navbar .navbar-nav .nav-item:hover .nav-link:after {
+    opacity: 1;
+}
+
+#main-nav .navbar .navbar-nav .nav-item .nav-link.active:after {
+    opacity: 1;
+}
+
+#main-nav .user {
+    position: absolute;
+    right: 44px;
+    top: 47px;
+    z-index: 9;
+}
+
+#main-nav .user a {
+    padding: 5px;
+    border: 2px solid #040404;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#main-nav .user a i {
+    font-size: 24px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #119ee6;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#main-nav .cart {
+    margin-left: 110px;
+    position: relative;
+}
+
+#main-nav .cart a i {
+    font-size: 18px;
+    color: #000;
+}
+
+#main-nav .cart a:before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 1px;
+    background: rgba(170, 170, 170, 0.5);
+    top: -18px;
+    left: -60px;
+}
+
+/*------------------------------
+banner css Style
+-------------------------------*/
+#banner {
+    background: #f2f2f2;
+}
+
+#banner .banner-slide .banner-item .banner-content {
+    padding: 170px 0;
+}
+
+#banner .banner-slide .banner-item h1 {
+    font-size: 48px;
+    color: #000;
+    line-height: 72px;
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+}
+
+#banner .banner-slide .banner-item p {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#banner .banner-slide .banner-item a i {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#banner .banner-slide .banner-item a:hover i {
+    color: #119ee6;
+}
+
+#banner .banner-slide .banner-item img {
+    padding-top: 130px;
+}
+
+#banner .banner-slide .leftbtn,
+#banner .banner-slide .rightbtn {
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    width: 40px;
+    background: #119ee6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    cursor: pointer;
+}
+
+#banner .banner-slide .leftbtn {
+    left: 0;
+}
+
+#banner .banner-slide .rightbtn {
+    right: 0;
+}
+#banner .banner-slide .leftbtn:hover,
+#banner .banner-slide .rightbtn:hover{
+    color: #119ee6;
+    background: #fff;
+}
+/*------------------------------
+hosting css Style
+-------------------------------*/
+#hosting .custom {
+    width: 20%;
+}
+
+#hosting .content {
+    background: #119ee6;
+    padding: 60px 28px 30px 30px;
+    position: relative;
+}
+
+#hosting .content .icon {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #040404;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    z-index: 9;
+}
+
+#hosting .content .icon i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background: #119ee6;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+#hosting .content h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+#hosting .content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+#hosting .content a {
+    font-family: 'droidserif-reg';
+    font-size: 14px;
+    color: #119ee6;
+    text-transform: capitalize;
+    line-height: 42px;
+    display: none;
+}
+
+#hosting .content a i {
+    color: #119ee6;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+#hosting .content:hover {
+    background: #f9f9f9;
+    margin-top: -42px;
+}
+
+#hosting .content:hover h3,
+#hosting .content:hover p {
+    color: #222;
+}
+
+#hosting .content:hover .icon {
+    border-color: #119ee6;
+}
+
+#hosting .content:hover .icon i {
+    background: #000;
+}
+
+#hosting .content:hover a {
+    display: block;
+}
+
+/*------------------------------
+domain css Style
+-------------------------------*/
+#domain {
+    background: url(../images/domain.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#domain .overlay {
+    background: rgba(4, 4, 4, 0.95);
+    padding: 100px 0;
+}
+
+#domain .overlay .title p {
+    color: #fff;
+}
+
+#domain .overlay .title h2 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+#domain .overlay .domain-content .domain-name {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#domain .overlay .domain-content .domain-name li {
+    display: inline-block;
+    text-align: left;
+    padding: 0 10px;
+}
+
+#domain .overlay .domain-content .domain-name li h4 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    line-height: 20px;
+}
+
+#domain .overlay .domain-content .domain-name li p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+
+#domain .overlay .domain-content .domain-name li p span {
+    font-size: 12px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#domain .overlay .domain-content form {
+    position: relative;
+}
+
+#domain .overlay .domain-content form .search {
+    width: 86%;
+    border: 10px solid #119ee6;
+    height: 40px;
+    padding: 0 30px;
+    box-sizing: content-box;
+    border-radius: 0;
+}
+
+#domain .overlay .domain-content form .search::placeholder {
+    font-family: 'droidserif-reg';
+    font-size: 14px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+#domain .overlay .domain-content form .select-domain {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#domain .overlay .domain-content form .select-domain select {
+    background: #000;
+    border: 0;
+    color: #ccc;
+    height: 40px;
+    width: 100px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+#domain .overlay .domain-content form .select-domain:after {
+    position: absolute;
+    content: '\f078';
+    font-family: fontawesome;
+    top: 13px;
+    right: 35px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+#domain .overlay .domain-content form .all-btn {
+    margin-top: 50px;
+}
+
+/*------------------------------
+feature css Style
+-------------------------------*/
+#feature {
+    padding: 100px 0 80px 0;
+}
+
+#feature .title {
+    margin-bottom: 80px;
+}
+
+#feature .content .icon {
+    position: relative;
+}
+
+#feature .content .icon i {
+    font-size: 30px;
+    color: #119ee6;
+}
+
+#feature .content .icon:after {
+    position: absolute;
+    content: '';
+    top: 35px;
+    left: 0;
+    height: 1px;
+    width: 60px;
+    background: #119ee6;
+}
+
+#feature .content h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    color: #222;
+    font-size: 18px;
+    line-height: 42px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+#feature .content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+/*------------------------------
+pricing css Style
+-------------------------------*/
+#pricing {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+#pricing .title {
+    margin-bottom: 90px;
+}
+
+#pricing .price-detail {
+    background: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0 5px 15px 0 rgba(153, 153, 153, 0.2);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#pricing .price-detail .price-title {
+    background: #000;
+    padding: 15px 0 45px 0;
+    position: relative;
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#pricing .price-detail.active .price-title h5 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #119ee6;
+    background: #fff;
+    display: inline-block;
+    text-transform: capitalize;
+    position: absolute;
+    top: 30px;
+    left: -125px;
+    transform: rotate(-45deg);
+}
+
+#pricing .price-detail .price-title h4 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#pricing .price-detail .price-title p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+
+#pricing .price-detail .price-title h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#pricing .price-detail .price-title h3 span {
+    font-size: 22px;
+}
+
+#pricing .price-detail .price-title .icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+
+#pricing .price-detail .price-title .icon:after {
+    width: 90px;
+    height: 45px;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+    border: 1px solid #fff;
+    border-top: 0;
+    position: absolute;
+    content: '';
+    bottom: 5px;
+    left: 5px;
+}
+
+#pricing .price-detail .price-title .icon i {
+    font-size: 30px;
+    color: #fff;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background: #000;
+    text-align: center;
+}
+
+#pricing .price-detail .price-list {
+    padding-top: 75px;
+}
+
+#pricing .price-detail .price-list li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+
+#pricing .price-detail .price-list li i {
+    margin-right: 10px;
+    color: #119ee6;
+}
+
+#pricing .price-detail .price-list li.cross i {
+    color: #999;
+}
+
+#pricing .price-detail .price-list li a {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 20px;
+    background: #119ee6;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+#pricing .price-detail.active .price-title {
+    background: #119ee6;
+}
+
+#pricing .price-detail.active .price-title .icon i {
+    background: #119ee6;
+}
+
+#pricing .price-detail.active .price-list li a {
+    background: #000;
+}
+
+#pricing .price-detail:hover .price-title {
+    background: #119ee6;
+}
+
+#pricing .price-detail:hover .price-title .icon i {
+    background: #119ee6;
+}
+
+#pricing .price-detail:hover .price-list li a {
+    background: #000;
+}
+
+/*------------------------------
+count-all css Style
+-------------------------------*/
+#count-all {
+    background: url(../images/domain.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#count-all .overlay {
+    background: rgba(4, 4, 4, 0.95);
+    padding: 125px 0 100px 0;
+}
+
+#count-all .overlay .counter-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#count-all .overlay .counter-items .item {
+    position: relative;
+}
+
+#count-all .overlay .counter-items .item:after {
+    position: absolute;
+    content: '';
+    height: 75px;
+    width: 5px;
+    background: rgba(17, 158, 230, 0.5);
+    transform: rotate(20deg);
+    top: 15px;
+    right: -75px;
+}
+
+#count-all .overlay .counter-items .item:last-child:after {
+    display: none;
+}
+
+#count-all .overlay .counter-items .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#count-all .overlay .counter-items .item h4 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
+}
+
+#count-all .overlay .counter-items .item h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+/*------------------------------
+offer css Style
+-------------------------------*/
+#offer {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+#offer .nav-tabs {
+    border-bottom: 0;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#offer .nav-tabs .nav-item {
+    position: relative;
+    width: 20%;
+}
+
+#offer .nav-tabs .nav-item .nav-link {
+    border: 1px solid #eee;
+    border-radius: 0;
+    display: block;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    background: #fff;
+    position: relative;
+}
+
+#offer .nav-tabs .nav-item .nav-link.active {
+    border-bottom: 2px solid #119ee6;
+}
+
+#offer .nav-tabs .nav-item .nav-link:hover {
+    border-bottom: 2px solid #119ee6;
+}
+
+#offer .nav-tabs .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #119ee6 transparent transparent transparent;
+    visibility: hidden;
+}
+
+#offer .nav-tabs .nav-item .nav-link.active:after {
+    visibility: visible;
+}
+
+#offer .nav-tabs .nav-item .nav-link i {
+    font-size: 30px;
+    color: #999;
+    line-height: 80px;
+}
+
+#offer .nav-tabs .nav-item .nav-link .tooltiptext {
+    visibility: hidden;
+    width: 135px;
+    background: #119ee6;
+    color: #fff;
+    font-family: 'droidserif-reg';
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#offer .nav-tabs .nav-item .nav-link .tooltiptext:after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background: #119ee6;
+}
+
+#offer .nav-tabs .nav-item .nav-link:hover .tooltiptext {
+    visibility: visible;
+}
+
+#offer .tab-content {
+    margin-top: 90px;
+}
+
+#offer .tab-content .tab-pane {
+    background: #fff;
+    padding: 60px 85px 80px 85px;
+}
+
+#offer .tab-content .tab-pane h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 25px;
+}
+
+#offer .tab-content .tab-pane p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    line-height: 28px;
+}
+
+#offer .tab-content .tab-pane span {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #999;
+    line-height: 28px;
+    font-style: italic;
+    margin: 15px 0 15px 20px;
+    position: relative;
+}
+
+#offer .tab-content .tab-pane span:before {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 2px;
+    background: #eee;
+    top: 5px;
+    left: -18px;
+}
+
+#offer .tab-content .tab-pane a {
+    font-family: 'droidserif-reg';
+    font-size: 16px;
+    color: #119ee6;
+    text-transform: capitalize;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#offer .tab-content .tab-pane a i {
+    margin-left: 10px;
+}
+
+/*------------------------------
+choose css Style
+-------------------------------*/
+#choose {
+    padding: 100px 0;
+}
+
+#choose .title {
+    margin-bottom: 90px;
+}
+
+#choose .item {
+    background: #119ee6;
+    padding: 30px;
+    position: relative;
+    -webkit-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#choose .item:hover {
+    background: #000;
+}
+
+#choose .item.one {
+    height: 590px;
+    text-align: right;
+    padding-top: 200px;
+}
+
+#choose .item.two {
+    margin: 0 30px 0 -20px;
+    height: 290px;
+    padding: 55px 50px 50px 40px;
+}
+
+#choose .item.three {
+    margin-left: -50px;
+    height: 290px;
+    padding: 55px 50px 50px 40px;
+}
+
+#choose .item.four {
+    margin: 10px -30px 0 -20px;
+    height: 290px;
+    padding: 55px 50px 50px 40px;
+}
+
+#choose .item.five {
+    margin: 10px 0 0 10px;
+    height: 290px;
+    padding: 55px 50px 50px 40px;
+}
+
+#choose .item span {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    display: inline-block;
+    font-size: 78px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
+
+#choose .item.one span {
+    top: 160px;
+    left: 30px;
+}
+
+#choose .item.two span {
+    top: 15px;
+    right: 20px;
+}
+
+#choose .item.three span {
+    top: 15px;
+    right: 20px;
+}
+
+#choose .item.four span {
+    top: 15px;
+    right: 20px;
+}
+
+#choose .item.five span {
+    top: 15px;
+    right: 20px;
+}
+
+#choose .item i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#choose .item h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+#choose .item p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/*------------------------------
+client css Style
+-------------------------------*/
+#client {
+    background: #f9f9f9;
+    padding: 100px 0 165px 0;
+}
+
+#client .title {
+    margin-bottom: 90px;
+}
+
+#client .comment h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    color: #222;
+    font-size: 24px;
+    line-height: 42px;
+    position: relative;
+    z-index: 1;
+}
+
+#client .comment i.quot {
+    font-size: 48px;
+    color: #ddd;
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    z-index: 0;
+}
+
+#client .comment ul {
+    margin: 10px 0 25px 0;
+}
+
+#client .comment ul li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+#client .comment ul li i {
+    font-size: 18px;
+    color: #ddd;
+}
+
+#client .comment p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    margin-left: 15px;
+    position: relative;
+}
+
+#client .comment p:before {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 1px;
+    background: #119ee6;
+    top: 5px;
+    left: -14px;
+}
+
+#client .comment .avatar {
+    position: relative;
+    margin-top: 30px;
+}
+
+#client .comment .avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#client .comment .avatar h4 {
+    font-family: 'droidserif-reg';
+    color: #222;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: capitalize;
+    margin-left: 85px;
+}
+
+#client .comment .avatar span {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 85px;
+}
+
+#client .client-slide .leftbtn,
+#client .client-slide .rightbtn {
+    font-size: 24px;
+    color: #222;
+    position: absolute;
+    bottom: -55px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+#client .client-slide .leftbtn {
+    left: 46%;
+}
+
+#client .client-slide .leftbtn:after {
+    position: absolute;
+    content: '/';
+    top: 0;
+    left: 32px;
+    color: #222;
+}
+
+#client .client-slide .rightbtn {
+    left: 50%;
+}
+
+#client .client-slide .leftbtn:hover,
+#client .client-slide .rightbtn:hover {
+    color: #119ee6;
+}
+
+/*------------------------------
+contact css Style
+-------------------------------*/
+#contact {
+    background: #f9f9f9;
+}
+
+#contact .address {
+    background: #119ee6;
+    padding: 45px 0;
+    position: relative;
+}
+
+#contact .address i {
+    font-size: 36px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    left: 70px;
+}
+
+#contact .address.mail i {
+    left: 95px;
+}
+
+#contact .address .text h3 {
+    font-family: 'droidserif-reg';
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+#contact .address .text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+}
+
+#contact .address.loc .text {
+    margin-left: 110px
+}
+
+#contact .address.phn .text {
+    margin-left: 120px
+}
+
+#contact .address.mail .text {
+    margin-left: 150px
+}
+
+/*------------------------------
+company css Style
+-------------------------------*/
+#company {
+    background: #151414;
+    padding: 80px 0 75px 0;
+}
+
+#company .detail .logo {
+    margin-bottom: 40px;
+}
+
+#company .detail a.learn {
+    font-family: 'droidserif-reg';
+    font-size: 14px;
+    color: #ccc;
+    text-transform: capitalize;
+    display: block;
+    margin: 15px 0 15px 0;
+}
+
+#company .detail a.learn i {
+    margin-left: 7px;
+}
+
+#company .detail a.learn:hover,
+#company .detail a.learn:hover i {
+    color: #119ee6;
+}
+
+#company .detail p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+}
+
+#company .detail p.follow {
+    color: #777;
+    text-transform: capitalize;
+    float: left;
+}
+
+#company .detail .social {
+    float: left;
+    margin-left: 15px;
+}
+
+#company .detail .social li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#company .detail .social li a i {
+    font-size: 14px;
+    color: #777;
+}
+
+#company .detail .social li a:hover i {
+    color: #119ee6;
+}
+
+#company .detail h3 {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+#company .detail .links li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+#company .detail .links li a i {
+    color: #fff;
+    margin-right: 7px;
+}
+
+#company .detail .links li a:hover,
+#company .detail .links li a:hover i {
+    color: #119ee6;
+}
+
+#company .detail h4 {
+    font-family: 'droidserif-reg';
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+
+#company .detail form {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#company .detail form input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 0;
+    margin-top: 25px;
+}
+
+#company .detail form input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #999;
+}
+
+#company .detail form button {
+    font-family: 'droidserif-bold';
+    font-weight: 700;
+    height: 34px;
+    padding: 0 14px;
+    color: #fff;
+    background: #119ee6;
+    border: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 14px;
+    position: absolute;
+    top: 28px;
+    right: 3px;
+    z-index: 9;
+}
+
+#company .detail form button:hover {
+    background: #151414;
+}
+
+/*------------------------------
+copyright css Style
+-------------------------------*/
+#copyright {
+    background: #151414;
+    border-top: 1px solid #555;
+}
+
+#copyright .text p {
+    font-family: 'droidserif-reg';
+    font-size: 16px;
+    color: #999;
+    line-height: 87px;
+    text-transform: capitalize;
+}
+
+#copyright .text p a,
+#copyright .text p i {
+    color: #119ee6;
+}
+
+#copyright .text p i.copy {
+    color: #fff;
+}
